@@ -22,34 +22,34 @@
                         <ul class="name">
                             <li>
                                 <label for="first-name-field" id="first-name-label">First Name:</label>   
-                                <input type="text" name="first-name" id="first-name-field">
+                                <input type="text" name="first-name" id="first-name-field" required>
                             </li>
                             <li>
                                 <label for="last-name-field">Last Name:</label>
-                                <input type="text" name="last-name" id="last-name-field">
+                                <input type="text" name="last-name" id="last-name-field" required>
                             </li>
                         </ul>
                     </li>
                     <li>
                         <ul class="age">
                             <li>
-                                <label for="age-field">Age:</label>
-                                <input type="number" name="age" id="age-field" min="18">
-                            </li>
-                            <li>
                                 <label for="birthdate-field">Birthdate:</label>
-                                <input type="date" name="birthdate" id="birthdate-field">
+                                <input type="date" name="birthdate" id="birthdate-field" required>
+                            </li>
+                            <li class="age-num">
+                                <label for="age-field">Age:</label>
+                                <input type="number" name="age" id="age-field" min="18" required>
                             </li>
                         </ul>
                     <li>
                         <ul class="login">
                             <li>
                                 <label for="email-field">Email Adress:</label>
-                                <input type="email" name="email" id="email-field">
+                                <input type="email" name="email" id="email-field" required>
                             </li>
                             <li>
                                 <label for="password-field">Password:</label>
-                                <input type="password" name="password" id="password-field">
+                                <input type="password" name="password" id="password-field" required>
                             </li>
                         </ul>
                     </li>
@@ -79,15 +79,15 @@
                         <input type="checkbox" id="term-agreement" name="terms" required>
                     </li>
                     <li class="form-option">
-                        <label for="mailing">I would like to recieve email updates</label>
+                        <label for="mailing">I would like to receive email updates</label>
                         <input type="checkbox" id="mail-agreement" name="mailing">
                     </li>
                 </ul>
             </section>
             
-            <section>
-                <button type="submit">SUBMIT</button>
-                <button type="button">Clear</button>
+            <section id="form-actions">
+                <button type="reset" class="clear">Clear</button>
+                <button type="submit" class="submit">Submit</button>
             </section>
         </form>
     </main>
