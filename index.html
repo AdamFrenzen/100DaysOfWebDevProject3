@@ -1,12 +1,95 @@
+
+                    
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Forms Practice</title>
-    <link type="stylesheet" href="./styles.css">
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <input type="text">
+    <header>
+        <h1>Demo Form</h1>
+    </header>
+    <main>
+        <form action="/" method="POST" validate>
+            <h2>User Registration:</h2>
+            
+            <section id="user-information">
+                <ul>
+                    <li>
+                        <ul class="name">
+                            <li>
+                                <label for="first-name-field" id="first-name-label">First Name:</label>   
+                                <input type="text" name="first-name" id="first-name-field">
+                            </li>
+                            <li>
+                                <label for="last-name-field">Last Name:</label>
+                                <input type="text" name="last-name" id="last-name-field">
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="age">
+                            <li>
+                                <label for="age-field">Age:</label>
+                                <input type="number" name="age" id="age-field" min="18">
+                            </li>
+                            <li>
+                                <label for="birthdate-field">Birthdate:</label>
+                                <input type="date" name="birthdate" id="birthdate-field">
+                            </li>
+                        </ul>
+                    <li>
+                        <ul class="login">
+                            <li>
+                                <label for="email-field">Email Adress:</label>
+                                <input type="email" name="email" id="email-field">
+                            </li>
+                            <li>
+                                <label for="password-field">Password:</label>
+                                <input type="password" name="password" id="password-field">
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Two Factor Verification Method:</h2>
+                <ul>
+                    <li class="form-option">
+                        <input type="radio" id="verify-text" name="password-verification" value="text">
+                        <label for="verify-text">Text message</label>
+                    </li>
+                    <li class="form-option">
+                        <input type="radio" id="verify-email" name="password-verification" value="email">
+                        <label for="verify-email">Email</label>
+                    </li>
+                </ul>
+            </section>
+
+            <hr>
+            
+            <section id="agreements">
+                <ul>
+                    <li class="form-option">
+                        <label for="term-agreement">I have read and agree to terms of use</label>
+                        <input type="checkbox" id="term-agreement" name="terms" required>
+                    </li>
+                    <li class="form-option">
+                        <label for="mailing">I would like to recieve email updates</label>
+                        <input type="checkbox" id="mail-agreement" name="mailing">
+                    </li>
+                </ul>
+            </section>
+            
+            <section>
+                <button type="submit">SUBMIT</button>
+                <button type="button">Clear</button>
+            </section>
+        </form>
+    </main>
 </body>
 </html>

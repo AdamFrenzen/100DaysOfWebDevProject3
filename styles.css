@@ -1,4 +1,106 @@
 body {
     background-color: rgb(30, 30, 30);
-    margin: rem;
+    margin: 8rem;
+}
+
+header {
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+form {
+    width: 30rem;
+    margin: 3rem auto;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 6px;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* ul categories */
+.name {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+.name li {
+    width: 100%;
+}
+.age {
+    display: flex;
+    gap: 16px;
+}
+.age .age-num {
+    width: 15%;
+}
+.age li {
+    width: 30%;
+}
+.login {
+    width: 80%;
+}
+label {
+    font-family: sans-serif;
+    display: block;
+    margin-bottom: .5rem;
+}
+input {
+    width: 100%;
+    display: block;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    border: 1px solid lightgrey;
+    padding: .25rem;
+    color: rgb(70, 70, 70);
+}
+input:focus {
+    outline: none;
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(255, 254, 238);
+    color: rgb(0, 0, 0);
+}
+button {
+    display: block;
+    font-family: sans-serif;
+    background-color: rgb(244, 244, 244);
+    border: 1px solid rgb(125, 125, 125);
+    border-radius: 6px;
+    padding: 0.4rem .5rem .25rem .5rem;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(235, 235, 235);
+}
+button:active {
+    background-color: rgb(255, 250, 202);
+}
+.clear {
+    background-color: white;
+    color: rgb(44, 44, 44);
+}
+.submit {
+    background-color: rgb(43, 43, 43);
+    color: white;
+}
+.submit:hover {
+    background-color: rgb(73, 73, 73);
+}
+
+.form-option {
+    display: flex;
+}
+
+.form-option input {
+    width: auto;
+    margin-right: .5rem;
+}
+#form-actions {
+    display: flex;
+    gap: 4px;
+    justify-content: right;
 }
